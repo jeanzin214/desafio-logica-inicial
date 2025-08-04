@@ -53,7 +53,7 @@ function namePicker() {//aki criei alguns nome
     const allNames = Math.floor(Math.random()*name.length);
     let player= name[allNames]
         return player
-
+//aki eu criei um sorteadokr para os nomes que estão acima
 }
 
 function finalMessage(){
@@ -61,8 +61,10 @@ function finalMessage(){
     let defeat = Math.floor(Math.random() * 130);
     let player = namePicker();
     let ranking = ranker(wins, defeat);
+//Aqui temos outro sorteador, só que nesse caso é para sortear numeros aleatorios para serem usadas nas vitorrias e derrotas.
 
     console.log(`Congratulations ${player}! Your current ranking is ${ranking}.`)
+    // aki o texto que aparece nol console "Congratulations jean! Your current rankiing is gold" .
 }
 
 for(let i=0 ; i<=3; i++){
@@ -70,3 +72,5 @@ for(let i=0 ; i<=3; i++){
     finalMessage();
     console.log('\n')
 }
+//aqui o laço de repição para que repita 4 vezes o codigo noo console.
+
