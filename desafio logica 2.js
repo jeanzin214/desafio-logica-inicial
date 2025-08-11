@@ -1,7 +1,7 @@
 
-//aki estou criando um geraador de numeros aleatorios, para sempre de um rank diferente.
+//Aqui estou criando um geraador de numeros aleatorios, para sempre de um rank diferente.
 
-function ranker(wins, defeat) {//aki criei a função que ira fazer o calculo das vitorias e derrotas e dar um saldo que ira definir seu rank
+function ranker(wins, defeat) {//Aqui criei a função que ira fazer o calculo das vitorias e derrotas e dar um saldo que ira definir seu rank
     let res = wins - defeat
     const rank = [
         'iron',
@@ -12,7 +12,7 @@ function ranker(wins, defeat) {//aki criei a função que ira fazer o calculo da
         'legendary',
         'immortal'
     ]
-    if (res <= 0) {//aki criei os valores que voce deve ter para conseguir algum rank
+    if (res <= 0) {//Aqui criei os valores que voce deve ter para conseguir algum rank
         return rank[0]
     } else if (res >= 11 && res <= 20) {
         return rank[1]
@@ -27,12 +27,11 @@ function ranker(wins, defeat) {//aki criei a função que ira fazer o calculo da
     } else if (res >= 101) {
         return rank[6]
     } else {
-        return "you're noob"//caso voce esteje com apontuaçao negativa ele aparecera esta mensagem.
+        return "you're noob"//Caso voce esteje com apontuaçao negativa ele aparecera esta mensagem.
     }
-
 }
 
-function namePicker() {//aki criei alguns nome 
+function namePicker() {//Aqui criei alguns nome 
     let name = [
         'gabriel',
         'dudu',
@@ -53,7 +52,7 @@ function namePicker() {//aki criei alguns nome
     const allNames = Math.floor(Math.random()*name.length);
     let player= name[allNames]
         return player
-//aki eu criei um sorteadokr para os nomes que estão acima
+//Aqui eu criei um sorteadokr para os nomes que estão acima
 }
 
 function finalMessage(){
@@ -64,7 +63,7 @@ function finalMessage(){
 //Aqui temos outro sorteador, só que nesse caso é para sortear numeros aleatorios para serem usadas nas vitorrias e derrotas.
 
     console.log(`Congratulations ${player}! Your current ranking is ${ranking}.`)
-    // aki o texto que aparece nol console "Congratulations jean! Your current rankiing is gold" .
+    // Aqui o texto que aparece nol console "Congratulations jean! Your current rankiing is gold" .
 }
 
 for(let i=0 ; i<=3; i++){
@@ -72,5 +71,6 @@ for(let i=0 ; i<=3; i++){
     finalMessage();
     console.log('\n')
 }
-//aqui o laço de repição para que repita 4 vezes o codigo noo console.
+//Aqui o laço de repição para que repita 4 vezes o codigo no console.
+
 
